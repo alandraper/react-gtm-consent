@@ -42,6 +42,8 @@ export interface DataLayerArgs {
 
 export type ConsentValue = 'denied' | 'granted';
 
+export type ConsentValue = 'denied' | 'granted';
+
 export interface ConsentArgs {
   ad_user_data?: ConsentValue,
   ad_personalization?: ConsentValue,
