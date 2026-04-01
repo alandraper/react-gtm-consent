@@ -40,12 +40,16 @@ export interface DataLayerArgs {
   dataLayerName?: string | undefined;
 }
 
+export type ConsentValue = 'denied' | 'granted';
+
 export interface ConsentArgs {
-  ad_storage?: "denied" | "granted";
-  analytics_storage?: "denied" | "granted";
-  functional_storage?: "denied" | "granted";
-  personalization_storage?: "denied" | "granted";
-  security_storage?: "denied" | "granted";
+  ad_user_data: ConsentValue,
+  ad_personalization: ConsentValue,
+  ad_storage?: ConsentValue;
+  analytics_storage?: ConsentValue;
+  functional_storage?: ConsentValue;
+  personalization_storage?: ConsentValue;
+  security_storage?: ConsentValue;
   wait_for_update?: number;
 }
 
