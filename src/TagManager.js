@@ -58,4 +58,4 @@ const TagManager = {
   },
 };
 
-module.exports = TagManager;
+export default TagManager;
